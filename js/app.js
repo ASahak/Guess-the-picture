@@ -166,7 +166,7 @@ var app = angular.module("myApp", [])
                                 back()
                             }
                         });
-                        var newIMG = angular.element("<img class='img_rright' src='../img/baza_img/"+safe.imgFull+".png'>");
+                        var newIMG = angular.element("<img class='img_rright' src='img/baza_img/"+safe.imgFull+".png'>");
                         var rotALL = function (){
                             angular.element(target).append(newIMG);
                         }
