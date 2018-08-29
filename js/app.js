@@ -95,7 +95,7 @@ var app = angular.module("myApp", [])
                     var child_back;
                     for(var i =0; i< ret_func.length; i++){
                         child_back = angular.element(target).children()[ret_func[i]] 
-                        angular.element(child_back).children()[0].innerHTML = "<img src='../img/baza_img/"+any_obj_data[0].img_parts+ret_func[i]+".png' class='img-fluid'>";
+                        angular.element(child_back).children()[0].innerHTML = "<img src='img/baza_img/"+any_obj_data[0].img_parts+ret_func[i]+".png' class='img-fluid'>";
                     }
                     angular.forEach(any_obj_rand_ind[0], function(elm, mls){
                         $($(angular.element(target).children()[ret_func[any_obj_rand_ind[0][mls]]]).children()[0]).css({
