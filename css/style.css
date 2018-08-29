@@ -1,0 +1,254 @@
+body{
+    background-image: url(../img/free-abstract-blue-background-vector.jpg);
+}
+.back_rgba{
+    background: rgba(0,0,0,0.8);
+}
+.main_content{
+    margin: 0 !important;
+    justify-content: center;
+    position: relative;
+}
+.main_content > div{
+    border: 1px solid;
+     height: 100px;
+    width: 100px;
+    position: relative;
+    
+}
+.class_back {
+    border-radius: 4px;
+    background: #4bbeff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.img_rright {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.back > img{
+    height: 100%;
+    width: 100%;
+}
+.front{
+    position: absolute;
+    background-image: url(../img/div_back.png);
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+/*    transition: transform .5s linear 0s;*/
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform .5s linear 0s;
+    transform: perspective(600px) rotateY(0deg);
+    overflow: hidden;
+}
+.main_content > div:hover .front{
+    transform: perspective(600px) rotateY(-180deg);
+    
+}
+.main_content > div:hover .back{
+    transform: perspective(600px) rotateY(0deg);
+    
+}
+.bottom_child_letters{
+    background: rgba(0,0,0,0.8);
+    padding: 15px 0;
+}
+.butss{
+    background: rgba(0,0,0,0.8);
+    padding: 0px 10px;
+}
+.letter_change{
+         font-size: 22px;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background: gray;
+    color: black;
+    margin: 4px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+.letter{
+   padding: 10px;
+    border: 2px solid black;
+    background-image: url(../img/pat_back.png);
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin: 0 2px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 18px;
+
+}
+.data_red{
+    border-color: red
+}
+.button {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 9px #999;
+}
+.button:focus {
+    outline: none;
+    
+}
+.button:active {
+    outline: none;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#x_1 {
+     background-image: url(../img/x_1.png);
+    padding: 10px;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 2px;
+    vertical-align: top;
+}
+#double em {
+        margin-top: 12px;
+    display: inline-block;
+    font-size: 23px;
+    color: #fff;
+
+}
+.level{
+    line-height: 45px;
+    font-size: 23px;
+    color: #fff;
+}
+#double b {
+    font-size: 1.9em;
+    vertical-align: top;
+    position: relative;
+    top: 4px !important;
+    color: #fff;
+}
+#gold b{
+    color: #fff;
+    position: relative;
+    top: -2px;
+    font-size: 18px;
+    
+}
+#gold {
+    width: 110px;
+    height: 40px;
+    margin: 5px;
+    border: 3px solid red;
+    background: black;
+}
+#voski {
+        display: inline-block;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/voski.png);
+    background-size: cover;
+    margin-left: -20px;
+    margin-top: -15px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width:1200px) {
+    .main_content > div{
+        height: 105px;
+        width: 105px;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:991px) {
+    .main_content > div{
+         height: 110px;
+        width: 110px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:767px) {
+    .main_content > div{
+         height: 90px;
+        width: 90px;
+    }
+    .letter{
+        width: 30px;
+        height: 30px;
+    }
+    .letter_change {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+        line-height: 22px;
+    }
+
+
+}
+@media screen and (max-width:767px) and (min-width:500px) {
+    .main_content > div{
+         height:91px;
+        width: 91px;
+    }
+    .letter{
+        width: 30px;
+        height: 30px;
+    }
+    .letter_change {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width:500px) {
+    .main_content {
+        height: 350px
+    }
+    .main_content > div{
+        height:20%;
+        width: 20%;
+    }
+    .button{
+        padding: 5px
+    }
+    .letter{
+        width: 20px;
+        height: 20px;
+    }
+    .letter_change {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 14px;
+    }
+}
